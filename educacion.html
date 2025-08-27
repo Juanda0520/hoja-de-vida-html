@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación - Hoja de Vida</title>
+    <!-- Estilos para la tabla -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            max-width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="img/logo_hv.png" alt="Logo Personal" width="150" height="80">
+
+    <!-- Titulo Principal -->
+    <h1>Hoja de Vida</h1>
+    
+    <hr>
+
+    <!-- Enlaces de menu basico -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="educacion.html">Educación</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>Educación</h2>
+
+    <!-- Tabla de Educación -->
+    <table>
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Institución</th>
+                <th>Título / Curso</th>
+                <th>¿Culminó?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>En curso</td>
+                <td>Universidad de Manizales</td>
+                <td>Ingeniería en Sistemas y Telecomunicaciones</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Universidad Tecnológica de Pereira</td>
+                <td>Curso Fundamentos de Programación</td>
+                <td>Sí</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+
+    <!-- Inicio del Formulario Agregado -->
+    <h2>Agregar Estudios</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="anio"><strong>Año:</strong></label><br>
+            <select id="anio" name="anio">
+                <option value="">-- Seleccione un año --</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                 <option value="en_curso">En curso</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="institucion"><strong>Institución:</strong></label><br>
+            <input type="text" id="institucion" name="institucion" required placeholder="Ej: Universidad de Caldas">
+        </div>
+        
+        <div>
+            <label for="curso"><strong>Título / Curso:</strong></label><br>
+            <input type="text" id="curso" name="curso" required placeholder="Ej: Diplomado en ciencia de datos">
+        </div>
+        
+        <div>
+            <p><strong>¿Culminó?</strong></p>
+            <input type="radio" id="culmino_si" name="culmino" value="si" checked>
+            <label for="culmino_si">Sí</label>
+            <br>
+            <input type="radio" id="culmino_no" name="culmino" value="no">
+            <label for="culmino_no">No</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    <!-- Fin del Formulario -->
+
+    <hr>
+
+    <!-- final de Pagina -->
+    <footer>
+        <p><strong>Información de Contacto:</strong></p>
+        <p>Correo Electrónico: <a href="mailto:jdlatorreo105564@umanizales.edu.co">jdlatorreo105564@umanizales.edu.co</a></p>
+        <p>Teléfono: +57 312 256 3585</p>
+    </footer>
+
+</body>
+</html>
